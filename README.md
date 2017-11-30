@@ -14,14 +14,18 @@ Small Userscript that calculates the current USD-Value for your due XMR.
 - a userscript could be a security risk, feel free to analyze the code before installing :)
 
 
-# How to install
-## Chrome
+# Requirements
+- Some kind of Userscript manager
+- Tampermonkey (preferred), Greasemonkey, etc.
+
+### Chrome
 - Install [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
 
-## Firefox
+### Firefox
 - Install [Tampermonkey](https://addons.mozilla.org/de/firefox/addon/tampermonkey/)
 
-## Install the script
+
+# How to install
 - [Click here](https://github.com/KaiGrassnick/supportxmr-to-usd-userscript/raw/master/xmrtousd.user.js) to download and install the script right away. Otherwise, download the xmrtousd.user.js and install it manually
 
 ## DONE!
