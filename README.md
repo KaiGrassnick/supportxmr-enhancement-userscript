@@ -1,7 +1,9 @@
 # Userscript for supportXMR
 
-Small Userscript that that calculates the XMR value to USD and shows it beside the Total due value.
+Small Userscript that calculates the current USD-Value for your due XMR.
 
-- Works only on supportXMR Dashboard
-- Uses public ticker api from poloniex.com (last price)
+- Works on supportXMR only Dashboard
+- Public ticker api from poloniex.com for last price
 
+# How it looks like
+![dashboard](https://github.com/KaiGrassnick/supportxmr-to-usd-userscript/raw/master/dashboard.png "Dashboard Screenshot")
