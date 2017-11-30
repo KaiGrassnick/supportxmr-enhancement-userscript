@@ -8,7 +8,8 @@ Small Userscript that enhances the supportXMR interface
 
 # Features
 1. Automatically calculate the *Total due* value to USD
- -  Uses Poloniex.com Public ticker api (last price)
+   - Uses Poloniex.com Public ticker api (last price)
+   - Update intervall every 5 seconds
 
 
 # Disclaimer
