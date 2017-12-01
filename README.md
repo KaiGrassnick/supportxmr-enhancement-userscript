@@ -31,7 +31,7 @@ Small Userscript that enhances the supportXMR interface
 
 
 # How to install
-- [Click here](https://github.com/KaiGrassnick/supportxmr-enhancement-userscript/raw/master/supportxmrenhancement.user.js) to download and install the script right away. Otherwise, download the xmrtousd.user.js and install it manually
+- [Click here](https://github.com/KaiGrassnick/supportxmr-enhancement-userscript/raw/master/supportxmrenhancement.user.js) to download and install the script right away. Otherwise, download the supportxmrenhancement.user.js and install it manually
 
 ## DONE!
 
