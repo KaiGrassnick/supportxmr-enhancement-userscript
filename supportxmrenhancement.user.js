@@ -35,6 +35,12 @@
     // ##############################
     // #### Actual functionality ####
     // ##############################
+    var exchangeWrapperExists = function()
+    {
+        return $("#exchange_value").length;
+    };
+
+
     var appendExchangeValue = function(element)
     {
         element.append(
@@ -46,7 +52,7 @@
     };
 
 
-    var addExcangeWrapper = function()
+    var addExchangeWrapper = function()
     {
         var headlines = $("#content").find("h4");
         headlines.each(function() {
@@ -73,17 +79,25 @@
 
     var updateExchangeValue = function()
     {
-        $.getJSON( exchangeUrl, function(data) {
-            var savings = getSavings();
-            var value = data.USDT_XMR.last * savings;
+        if(!exchangeWrapperExists()){
+            addExchangeWrapper();
+        }
+        // if we can't find it, we're probably not on the dashboard...
+        if(exchangeWrapperExists()) {
+            $.getJSON(exchangeUrl, function (data) {
+                var savings = getSavings();
+                var value = data.USDT_XMR.last * savings;
 
-            setExchangeValue(value);
-        });
+                setExchangeValue(value);
+            });
+        }
     };
 
 
     var autoUpdateValue = function()
     {
+        updateExchangeValue();
+
         setInterval(function() {
             updateExchangeValue();
         }, exchangeUpdateInterval * 1000);
@@ -102,8 +116,7 @@
 
     var init = function()
     {
-        addExcangeWrapper();
-        updateExchangeValue();
+        addExchangeWrapper();
         autoUpdateValue();
     };
 
